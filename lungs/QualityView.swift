@@ -1,21 +1,45 @@
 import SwiftUI
 
 struct QualityView: View {
-    @ObservedObject var qualityModel: QualityModel
+    @ObservedObject var qm: QualityModel
     var body: some View {
-        VStack {
-            if (qualityModel.last == true) {
-                Spacer()
-                Image(systemName: "plus")
-                    .resizable()
-                    .frame(width:150, height:150)
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.accentColor)
-                    .font(.system(size:12, weight: .thin))
-                Spacer()
-            } else {
-                Text("Test")
+        ZStack {
+            RoundedRectangle(cornerRadius: 15)
+                .foregroundColor(Color(.secondarySystemBackground))
+            VStack {
+                HStack {
+                    if (qm.loading) {
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle())
+                    } else {
+                        Image(systemName:"arrow.clockwise")
+                            .foregroundColor(.accentColor)
+                            .onTapGesture {
+                                qm.refresh(newLocation: nil)
+                            }
+                    }
+                    if (qm.first) {
+                        Spacer()
+                        Image(systemName:"location.fill")
+                            .foregroundColor(.gray)
+                    }
+                        Spacer()
+                    Image(systemName:"plus")
+                        .foregroundColor(.accentColor)
+                }
+                .padding(.all)
+                VStack {
+                    if (!qm.hasData) {
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle())
+                    } else {
+                        Text("\(qm.city), \(qm.province)")
+                        Text("\(qm.country)")
+                    }
+                    Spacer()
+                }
             }
         }
+        .frame(width: 300, height: 500)
     }
 }

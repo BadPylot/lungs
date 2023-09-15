@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ZStack {
-                Rectangle().fill(.bar).frame(height:100)
+                Rectangle().fill(Color(.secondarySystemBackground)).frame(height:100)
                 HStack {
                         Image(systemName: "lungs")
                             .font(.system(size: 35))
@@ -26,7 +26,7 @@ struct ContentView: View {
                   data: vm.pageItems,
                   id: \.hashValue,
                   content: { qualityModel in
-                QualityView(qualityModel: qualityModel)
+                QualityView(qm: qualityModel)
              })
         }
     }
@@ -34,6 +34,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(vm: ViewModel())
+        ContentView(vm: ViewModel(demo: true))
     }
 }

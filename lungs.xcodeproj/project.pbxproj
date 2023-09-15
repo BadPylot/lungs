@@ -30,6 +30,7 @@
 		0D75B9A22AB2997F00448813 /* QualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityModel.swift; sourceTree = "<group>"; };
 		0D75B9A42AB2999D00448813 /* QualityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityView.swift; sourceTree = "<group>"; };
 		0D999A0C2AB2AB8700F355C0 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		0D999A0E2AB35B5400F355C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		0D75B98A2AB2845300448813 /* lungs */ = {
 			isa = PBXGroup;
 			children = (
+				0D999A0E2AB35B5400F355C0 /* Info.plist */,
 				0D75B98B2AB2845300448813 /* lungsApp.swift */,
 				0D75B9A22AB2997F00448813 /* QualityModel.swift */,
 				0D75B9992AB28E6C00448813 /* ViewModel.swift */,
@@ -298,6 +300,8 @@
 				DEVELOPMENT_TEAM = 9474QKS27P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lungs/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To show air quality for your current location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +331,8 @@
 				DEVELOPMENT_TEAM = 9474QKS27P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lungs/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To show air quality for your current location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
