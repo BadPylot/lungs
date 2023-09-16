@@ -7,30 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D75B98C2AB2845300448813 /* lungsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75B98B2AB2845300448813 /* lungsApp.swift */; };
-		0D75B98E2AB2845300448813 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75B98D2AB2845300448813 /* ContentView.swift */; };
+		0D75B98C2AB2845300448813 /* LungsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75B98B2AB2845300448813 /* LungsApp.swift */; };
+		0D75B98E2AB2845300448813 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75B98D2AB2845300448813 /* RootView.swift */; };
 		0D75B9902AB2845400448813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D75B98F2AB2845400448813 /* Assets.xcassets */; };
 		0D75B9932AB2845400448813 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D75B9922AB2845400448813 /* Preview Assets.xcassets */; };
-		0D75B99A2AB28E6C00448813 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75B9992AB28E6C00448813 /* ViewModel.swift */; };
+		0D75B99A2AB28E6C00448813 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75B9992AB28E6C00448813 /* RootViewModel.swift */; };
 		0D75B99E2AB2907F00448813 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75B99D2AB2907F00448813 /* LocationManager.swift */; };
 		0D75B9A12AB2994900448813 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 0D75B9A02AB2994900448813 /* SwiftUIPager */; };
 		0D75B9A32AB2997F00448813 /* QualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75B9A22AB2997F00448813 /* QualityModel.swift */; };
 		0D75B9A52AB2999D00448813 /* QualityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75B9A42AB2999D00448813 /* QualityView.swift */; };
 		0D999A0D2AB2AB8700F355C0 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D999A0C2AB2AB8700F355C0 /* Config.plist */; };
+		0D999A102AB4B63F00F355C0 /* BrandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D999A0F2AB4B63F00F355C0 /* BrandingView.swift */; };
+		0D999A182AB4CB1C00F355C0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D999A172AB4CB1C00F355C0 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D75B9882AB2845300448813 /* lungs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lungs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D75B98B2AB2845300448813 /* lungsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lungsApp.swift; sourceTree = "<group>"; };
-		0D75B98D2AB2845300448813 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D75B98B2AB2845300448813 /* LungsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LungsApp.swift; sourceTree = "<group>"; };
+		0D75B98D2AB2845300448813 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		0D75B98F2AB2845400448813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D75B9922AB2845400448813 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0D75B9992AB28E6C00448813 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0D75B9992AB28E6C00448813 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		0D75B99D2AB2907F00448813 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0D75B9A22AB2997F00448813 /* QualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityModel.swift; sourceTree = "<group>"; };
 		0D75B9A42AB2999D00448813 /* QualityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityView.swift; sourceTree = "<group>"; };
 		0D999A0C2AB2AB8700F355C0 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		0D999A0E2AB35B5400F355C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0D999A0F2AB4B63F00F355C0 /* BrandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandingView.swift; sourceTree = "<group>"; };
+		0D999A172AB4CB1C00F355C0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +68,15 @@
 		0D75B98A2AB2845300448813 /* lungs */ = {
 			isa = PBXGroup;
 			children = (
-				0D999A0E2AB35B5400F355C0 /* Info.plist */,
-				0D75B98B2AB2845300448813 /* lungsApp.swift */,
-				0D75B9A22AB2997F00448813 /* QualityModel.swift */,
-				0D75B9992AB28E6C00448813 /* ViewModel.swift */,
-				0D75B9A42AB2999D00448813 /* QualityView.swift */,
+				0D75B98B2AB2845300448813 /* LungsApp.swift */,
 				0D75B99D2AB2907F00448813 /* LocationManager.swift */,
-				0D75B98D2AB2845300448813 /* ContentView.swift */,
+				0D999A142AB4BE7F00F355C0 /* Views */,
+				0D999A132AB4BE0800F355C0 /* Viewmodels */,
+				0D999A122AB4BDEE00F355C0 /* Models */,
+				0D999A0E2AB35B5400F355C0 /* Info.plist */,
+				0D999A0C2AB2AB8700F355C0 /* Config.plist */,
 				0D75B98F2AB2845400448813 /* Assets.xcassets */,
 				0D75B9912AB2845400448813 /* Preview Content */,
-				0D999A0C2AB2AB8700F355C0 /* Config.plist */,
 			);
 			path = lungs;
 			sourceTree = "<group>";
@@ -84,6 +87,33 @@
 				0D75B9922AB2845400448813 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D999A122AB4BDEE00F355C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D75B9A22AB2997F00448813 /* QualityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D999A132AB4BE0800F355C0 /* Viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				0D75B9992AB28E6C00448813 /* RootViewModel.swift */,
+			);
+			path = Viewmodels;
+			sourceTree = "<group>";
+		};
+		0D999A142AB4BE7F00F355C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D999A0F2AB4B63F00F355C0 /* BrandingView.swift */,
+				0D75B9A42AB2999D00448813 /* QualityView.swift */,
+				0D75B98D2AB2845300448813 /* RootView.swift */,
+				0D999A172AB4CB1C00F355C0 /* SearchView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,12 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D999A102AB4B63F00F355C0 /* BrandingView.swift in Sources */,
+				0D999A182AB4CB1C00F355C0 /* SearchView.swift in Sources */,
 				0D75B99E2AB2907F00448813 /* LocationManager.swift in Sources */,
-				0D75B98E2AB2845300448813 /* ContentView.swift in Sources */,
+				0D75B98E2AB2845300448813 /* RootView.swift in Sources */,
 				0D75B9A32AB2997F00448813 /* QualityModel.swift in Sources */,
-				0D75B99A2AB28E6C00448813 /* ViewModel.swift in Sources */,
+				0D75B99A2AB28E6C00448813 /* RootViewModel.swift in Sources */,
 				0D75B9A52AB2999D00448813 /* QualityView.swift in Sources */,
-				0D75B98C2AB2845300448813 /* lungsApp.swift in Sources */,
+				0D75B98C2AB2845300448813 /* LungsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +333,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = lungs/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To show air quality for your current location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "lungs needs your current location to display air quality information for your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,7 +364,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = lungs/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To show air quality for your current location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "lungs needs your current location to display air quality information for your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

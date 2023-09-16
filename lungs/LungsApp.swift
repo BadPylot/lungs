@@ -1,11 +1,11 @@
 import SwiftUI
 
 @main
-struct lungsApp: App {
+struct LungsApp: App {
     @StateObject var viewModel = ViewModel();
     var body: some Scene {
         WindowGroup {
-            ContentView(vm: viewModel)
+            RootView(vm: viewModel)
         }
     }
 }

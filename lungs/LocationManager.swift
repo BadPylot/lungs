@@ -15,19 +15,21 @@ class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
     public func setChangedHandler(changedHandler: @escaping () -> Void) {
         self.changedHandler = changedHandler
     }
-    // Delegates
+    
+    // Delegate functions
     func locationManager(_: CLLocationManager, didUpdateLocations: [CLLocation]) {
         if (didUpdateLocations.first != nil) {
             let oldLoc = curLoc
             curLoc = didUpdateLocations.first!
-            // If the user has moved less than 50 feet (converted to meters for comparison)
-            if ((oldLoc == nil) || oldLoc!.distance(from: curLoc!) > (50 * 0.3048)) {
+            // If the user has moved more than 1km or there is no previous location
+            if ((oldLoc == nil) || oldLoc!.distance(from: curLoc!) > (1000)) {
                 if (changedHandler != nil) {
                     changedHandler!()
                 }
             }
         }
     }
+    
     func locationManagerDidChangeAuthorization(_: CLLocationManager) {
         if (locationManager.authorizationStatus == .notDetermined) {
             locationManager.requestWhenInUseAuthorization()
@@ -36,7 +38,8 @@ class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
             locationManager.requestLocation()
         }
     }
+    
     func locationManager(_: CLLocationManager, didFailWithError: Error) {
-        // If this doesn't exist the app crashes
+        // Required to exist
     }
 }
